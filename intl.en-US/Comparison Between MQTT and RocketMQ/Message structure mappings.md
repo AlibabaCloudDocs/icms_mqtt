@@ -12,7 +12,7 @@ For more information about AliwareMQ for IoT, see [What is AliwareMQ for IoT?](.
 
 AliwareMQ for IoT and RocketMQ are messaging systems that are based on the publish-subscribe model and have similar concepts. The following figure shows the differences in the major concepts and mappings between AliwareMQ for IoT and RocketMQ.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/152389/155868188843276_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/152389/155868190243276_en-US.png)
 
 As shown in the preceding figure, AliwareMQ for IoT supports multi-level topics, whereas RocketMQ supports one-level topics. Therefore, a level-1 topic in AliwareMQ for IoT is mapped to a topic in RocketMQ, and level-2 and -3 topics in AliwareMQ for IoT are mapped to the message properties in RocketMQ.
 
