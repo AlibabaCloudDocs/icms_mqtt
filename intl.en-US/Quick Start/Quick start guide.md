@@ -21,7 +21,7 @@ As shown in the preceding figure, to use an MQTT client to send and receive mess
 -   You have an Alibaba Cloud AccessKey. If not, create an AccessKey by following the instructions provided in [Create an AccessKey](../../../../intl.en-US/General Reference/Create an AccessKey.md#). For more information about authentication, see [Authentication overview](../../../../intl.en-US/Authorization and Authentication/Authentication overview.md#).
 
 
-## Create resources {#section_kx4_3rp_hhb .section}
+## Step 1: Create resources {#section_kx4_3rp_hhb .section}
 
 To use AliwareMQ for IoT, you must first create AliwareMQ for IoT resources, including the following:
 
@@ -126,7 +126,7 @@ Currently, AliwareMQ for IoT supports MQTT on TCP, MQTT SSL, WebSocket, WebScoke
 |-----------|---|---------|-----------------|-----|
 |1883|8883|80|443|843|
 
-## Create a topic and a group ID { .section}
+## Step 3: Create a topic and a group ID { .section}
 
 Note the following network access restrictions when using AliwareMQ for IoT:
 
