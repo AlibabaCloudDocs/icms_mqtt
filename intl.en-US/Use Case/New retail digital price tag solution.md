@@ -77,7 +77,7 @@ The advantages of the new retail digital price tag solution are as follows:
 
 ## Considerations {#section_hxp_0fz_jbx .section}
 
-The preceding procedure describes how to use AliwareMQ for IoT and RocketMQ to build a digital price tag system. For more information about the SDK, see [MQTT](../intl.en-US/SDK Reference/Download the SDK.md#) and [RocketMQ](https://help.aliyun.com/document_detail/114448.html) documents.
+The preceding procedure describes how to use AliwareMQ for IoT and RocketMQ to build a digital price tag system. For more information about the SDK, see [AliwareMQ for IoT](https://www.alibabacloud.com/help/product/100973.htm) and [AliwareMQ for RocketMQ](https://www.alibabacloud.com/help/product/29530.htm) documents.
 
 When using AliwareMQ for IoT and RocketMQ to send commands, follow these principles for message type design and parameter design:
 
@@ -95,7 +95,7 @@ When using AliwareMQ for IoT and RocketMQ to send commands, follow these princip
 
 -   **Topic name mapping**
 
-    To use AliwareMQ for IoT, you need to understand the MQTT subscription model. For more information, see the [protocol documentation](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html) and [official documentation](https://help.aliyun.com/product/100973.html).
+    To use AliwareMQ for IoT, you need to understand the MQTT subscription model. For more information, see the [protocol documentation](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html) and [official documentation](https://www.alibabacloud.com/help/product/100973.htm).
 
     MQTT is a message protocol that follows the publishing/subscription model. The subscription relationship and topic follow the directory tree format. Topics can be divided into parent topics and subtopics. The total length of a topic \(including parent topics and subtopics\) cannot exceed 64 characters. The types of topics are described as follows:
 
