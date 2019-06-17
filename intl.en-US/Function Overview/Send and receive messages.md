@@ -12,6 +12,7 @@ AliwareMQ for IoT supports message sending and receiving in multiple languages. 
 |. NET|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-DoNet-demo/MQTTDemo.cs](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-DoNet-demo/MQTTDemo.cs)|
 |JavaScript|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-js-demo/lmqdemo.html](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-js-demo/lmqdemo.html)|
 |iOS|[https://github.com/AliwareMQ/lmq-demo/tree/master/lmq-ios-demo/MQTTChatDemo](https://github.com/AliwareMQ/lmq-demo/tree/master/lmq-ios-demo/MQTTChatDemo)|
+|PHP|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTSendMessageToMQTT.php](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTSendMessageToMQTT.php)|
 
 ## Use AliwareMQ for IoT to send messages and RocketMQ to receive messages {#section_d5n_bxw_hhb .section}
 
@@ -35,12 +36,14 @@ AliwareMQ for IoT supports message sending and receiving in multiple languages. 
 |. NET|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-DoNet-demo/MQTTDemo.cs](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-DoNet-demo/MQTTDemo.cs)|
 |JavaScript|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-js-demo/lmqdemo.html](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-js-demo/lmqdemo.html)|
 |iOS|[https://github.com/AliwareMQ/lmq-demo/tree/master/lmq-ios-demo/MQTTChatDemo](https://github.com/AliwareMQ/lmq-demo/tree/master/lmq-ios-demo/MQTTChatDemo)|
+|PHP|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTConnectUseSignatureMode.php](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTConnectUseSignatureMode.php)|
 
 ## Use token for authentication on MQTT clients {#section_nhw_cxw_hhb .section}
 
 |Language|Sample code|
 |--------|-----------|
 |Java|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-java-demo/src/main/java/com/aliyun/openservices/lmq/example/demo/MQ4IoTSendMessageToMQ4IoTUseTokenMode.java](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-java-demo/src/main/java/com/aliyun/openservices/lmq/example/demo/MQ4IoTSendMessageToMQ4IoTUseTokenMode.java)|
+|PHP|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTConnectUseTokenMode.php](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTConnectUseTokenMode.php)|
 
 ## Use SSL encryption on MQTT clients {#section_sy1_dxw_hhb .section}
 
@@ -58,6 +61,7 @@ AliwareMQ for IoT supports message sending and receiving in multiple languages. 
 |Language|Sample code|
 |--------|-----------|
 |Java|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-java-demo/src/main/java/com/aliyun/openservices/lmq/example/demo/MQ4IoTSendMessageToMQ4IoTUseSignatureMode.java](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-java-demo/src/main/java/com/aliyun/openservices/lmq/example/demo/MQ4IoTSendMessageToMQ4IoTUseSignatureMode.java)|
+|PHP|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTSendOrderMessage.php](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTSendOrderMessage.php)|
 
 ## Query the number of online MQTT clients {#section_apc_dxw_hhb .section}
 
