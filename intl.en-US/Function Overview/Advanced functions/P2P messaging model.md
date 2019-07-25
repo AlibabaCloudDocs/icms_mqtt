@@ -1,6 +1,6 @@
 # P2P messaging model {#concept_96176_zh .concept}
 
-AliwareMQ for IoT supports the point-to-point \(P2P\) messaging model, in addition to the publish-subscribe messaging model that is supported by the standard MQTT protocol. This topic describes the concepts and principles of the P2P model as well as how to use AliwareMQ for IoT to send and receive messages through P2P.
+Message Queue for MQTT supports the point-to-point \(P2P\) messaging model, in addition to the publish-subscribe messaging model that is supported by the standard MQTT protocol. This topic describes the concepts and principles of the P2P model as well as how to use Message Queue for MQTT to send and receive messages through P2P.
 
 ## What is the P2P model? {#section_fg4_dka_kjz .section}
 
@@ -12,7 +12,7 @@ The P2P model not only saves the subscription registration cost for the receiver
 
 ## Differences between the P2P model and the publish-subscribe model {#section_416_yw0_f10 .section}
 
-The differences between the P2P model and the publish-subscribe model when used in AliwareMQ for IoT are as follows:
+The differences between the P2P model and the publish-subscribe model when used in Message Queue for MQTT are as follows:
 
 -   In the publish-subscribe model, the message sender needs to send the messages of the topic to which the receiver has subscribed. In the P2P model, the receiver does not need to subscribe to the topic, and the sender can send messages directly to the target client according to the standards.
 -   In the publish-subscribe model, the receiver needs to subscribe to the topic in advance to receive messages from the sender. In the P2P model, the receiver does not need to subscribe to the topic in advance. Therefore, the program logic at the receiver is simplified and the subscription cost is saved.
