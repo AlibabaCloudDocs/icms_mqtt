@@ -1,8 +1,8 @@
 # Download the SDK {#concept_44866_zh .concept}
 
-Before using an AliwareMQ for IoT client \(referred to here as the MQTT client\) to send and receive messages, you need to download an SDK based on the development languages that are supported by AliwareMQ for IoT.
+Before using an Message Queue for MQTT client \(referred to here as the MQTT client\) to send and receive messages, you need to download an SDK based on the development languages that are supported by Message Queue for MQTT.
 
-By default, AliwareMQ for IoT supports the standard MQTT 3.1.1 protocol and is theoretically compatible with all MQTT clients. However, some MQTT clients may still have compatibility issues.
+By default, Message Queue for MQTT supports the standard MQTT 3.1.1 protocol and is theoretically compatible with all MQTT clients. However, some MQTT clients may still have compatibility issues.
 
 [Table 1](#table_v7q_aso_usa) lists the recommended third-party SDKs for languages and platforms that are widely used by MQTT users.
 
