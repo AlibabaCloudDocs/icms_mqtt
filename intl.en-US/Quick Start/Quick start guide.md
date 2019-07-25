@@ -1,29 +1,29 @@
 # Quick start guide {#concept_44867_zh .concept}
 
-This topic provides the quick start guide on how to use AliwareMQ for IoT to send and receive messages through the MQTT protocol that is supported by default.
+This topic provides the quick start guide on how to use Message Queue for MQTT to send and receive messages through the MQTT protocol that is supported by default.
 
-If you want to access through a non-MQTT protocol, such as China New Energy Vehicle National Standards or China National GB-808 Standards, you must purchase AliwareMQ for IoT Enterprise Platinum Edition. We provide the documentation and Customer Services for the Enterprise Platinum Edition in separate channels.
+If you want to access through a non-MQTT protocol, such as China New Energy Vehicle National Standards or China National GB-808 Standards, you must purchase Message Queue for MQTT Enterprise Platinum Edition. We provide the documentation and Customer Services for the Enterprise Platinum Edition in separate channels.
 
 ## Background {#section_a08_wel_m9l .section}
 
-AliwareMQ for IoT must be used with backend MQ.
+Message Queue for MQTT must be used with backend MQ.
 
--   An AliwareMQ for IoT instance is a stateless gateway instance that is used to maintain client connections and to forward messages in mobile Internet and IoT scenarios. It does not support message data persistence. Therefore, you must configure a message storage instance for message storage and message data persistence.
--   Currently, each AliwareMQ for IoT instance \(gateway instance\) must be bound to a storage instance \(RocketMQ instance\). Non-persistent usage \(in direct push mode, where messages are not persistent\) will be available in the future.
--   Currently, AliwareMQ for IoT only supports RocketMQ instances for backend message storage. AliwareMQ for IoT will support other types of storage instances in the future, such as Kafka and AMQP \(RabbitMQ\).
--   Currently, you can create a limited number of AliwareMQ for IoT instances in a region, and one AliwareMQ for IoT instance can be bound to only one RocketMQ instance. For the maximum number of instances that can be created in one region, see the console prompts.
+-   An Message Queue for MQTT instance is a stateless gateway instance that is used to maintain client connections and to forward messages in mobile Internet and IoT scenarios. It does not support message data persistence. Therefore, you must configure a message storage instance for message storage and message data persistence.
+-   Currently, each Message Queue for MQTT instance \(gateway instance\) must be bound to a storage instance \(RocketMQ instance\). Non-persistent usage \(in direct push mode, where messages are not persistent\) will be available in the future.
+-   Currently, Message Queue for MQTT only supports RocketMQ instances for backend message storage. Message Queue for MQTT will support other types of storage instances in the future, such as Kafka and AMQP \(RabbitMQ\).
+-   Currently, you can create a limited number of Message Queue for MQTT instances in a region, and one Message Queue for MQTT instance can be bound to only one RocketMQ instance. For the maximum number of instances that can be created in one region, see the console prompts.
 
-When using AliwareMQ for IoT, note the following network access restrictions:
+When using Message Queue for MQTT, note the following network access restrictions:
 
-Only the topics and group IDs on the same instance in the same region can be interconnected. For example, if a topic is created on Instance A in **China \(Beijing\)**, then the topic can be accessed only by the AliwareMQ for IoT client \(hereinafter referred to as the client\) with the group ID that is created on Instance A in **China \(Beijing\)**.
+Only the topics and group IDs on the same instance in the same region can be interconnected. For example, if a topic is created on Instance A in **China \(Beijing\)**, then the topic can be accessed only by the Message Queue for MQTT client \(hereinafter referred to as the client\) with the group ID that is created on Instance A in **China \(Beijing\)**.
 
 ## Process {#section_m4x_trp_hhb .section}
 
-[Figure 1](#fig_dsf_ny4_hhb) shows how to send and receive messages through AliwareMQ for IoT.
+[Figure 1](#fig_dsf_ny4_hhb) shows how to send and receive messages through Message Queue for MQTT.
 
  ![Quick start flowchart](images/43300_en-US.png "Quick start process")
 
-As shown in [Figure 1](#fig_dsf_ny4_hhb), you must create resources before sending and receiving messages on a client. Otherwise, the AliwareMQ for IoT broker may deny the connections with invalid client IDs.
+As shown in [Figure 1](#fig_dsf_ny4_hhb), you must create resources before sending and receiving messages on a client. Otherwise, the Message Queue for MQTT broker may deny the connections with invalid client IDs.
 
 ## Prerequisites {#section_mxv_grp_hhb .section}
 
@@ -36,7 +36,7 @@ As shown in [Figure 1](#fig_dsf_ny4_hhb), you must create resources before sendi
 
 The resources include:
 
--   AliwareMQ for IoT Instance \(for maintaining client connections and forwarding messages\)
+-   Message Queue for MQTT Instance \(for maintaining client connections and forwarding messages\)
 -   Message storage instance \(for message storage, and only RocketMQ instances are currently supported\)
 -   Topic \(level-1 topic for message sending and subscription, that is, the parent topic\)
 -   Group ID \(for client identification\)
@@ -53,9 +53,9 @@ The resources include:
 
     3.  In the top navigation bar, select a region in which you want to create the resources, such as **China \(Beijing\)**.
 
-2.  **Create an AliwareMQ for IoT instance**.
+2.  **Create an Message Queue for MQTT instance**.
 
-    First, you must create an AliwareMQ for IoT instance. Note the following before creating an instance:
+    First, you must create an Message Queue for MQTT instance. Note the following before creating an instance:
 
     -   You can create a limited number of instances in each region. For more information, see the console prompts.
 
@@ -63,33 +63,33 @@ The resources include:
 
     -   A Standard Edition instance takes effect upon purchase. An Enterprise Platinum Edition instance takes time to deploy and you will be notified when the instance is available.
 
-    Follow these steps to create an AliwareMQ for IoT instance:
+    Follow these steps to create an Message Queue for MQTT instance:
 
     1.  In the left-side navigation pane, click **Overview**.
 
     2.  On the Instances page, click **Create Instance** in the upper-right corner.
 
-    3.  In the **Create Instance** dialog box, select an AliwareMQ for IoT instance version and go to the Purchase page. Select specifications as needed and complete the purchase as prompted.
+    3.  In the **Create Instance** dialog box, select an Message Queue for MQTT instance version and go to the Purchase page. Select specifications as needed and complete the purchase as prompted.
 
-    Return to the **Overview** page of the console, where you should be able to see the purchased \(created\) AliwareMQ for IoT instance.
+    Return to the **Overview** page of the console, where you should be able to see the purchased \(created\) Message Queue for MQTT instance.
 
 3.  **Create and bind a data storage instance**.
 
-    After creating an AliwareMQ for IoT instance, you must create an instance for storing topics and messages and bind the message storage instance to the AliwareMQ for IoT instance. \(Currently, only RocketMQ instances are supported for data storage.\)
+    After creating an Message Queue for MQTT instance, you must create an instance for storing topics and messages and bind the message storage instance to the Message Queue for MQTT instance. \(Currently, only RocketMQ instances are supported for data storage.\)
 
     The binding has the following limits:
 
-    -   An AliwareMQ for IoT instance can be bound only once, and its bound message storage instance cannot be changed once the binding is completed.
+    -   An Message Queue for MQTT instance can be bound only once, and its bound message storage instance cannot be changed once the binding is completed.
 
-    -   Each storage instance can be bound to only one AliwareMQ for IoT instance. One-to-multiple binding is not supported.
+    -   Each storage instance can be bound to only one Message Queue for MQTT instance. One-to-multiple binding is not supported.
 
     -   The two instances to be bound must have the same namespace type. That is, an instance with an exclusive namespace cannot be bound to an instance with a non-exclusive namespace.
 
-    -   If you delete the storage instance bound to an AliwareMQ for IoT instance in advance, the AliwareMQ for IoT instance may be unavailable.
+    -   If you delete the storage instance bound to an Message Queue for MQTT instance in advance, the Message Queue for MQTT instance may be unavailable.
 
     Follow these steps to create and bind a storage instance:
 
-    1.  In the left-side navigation pane, click **Instances**. On the **Instances** tab page that appears by default, select the created AliwareMQ for IoT instance.
+    1.  In the left-side navigation pane, click **Instances**. On the **Instances** tab page that appears by default, select the created Message Queue for MQTT instance.
     2.  In the **Step 2: Configure Message Storage** section, click the **RocketMQ \>\>** box.
 
         ![Bind an instance](images/47584_en-US.png "Bind an instance")
@@ -115,19 +115,19 @@ The resources include:
 
     To send and receive messages over MQTT, you must create an MQTT parent topic. Subtopics at different levels can be directly used in code without the need to create them.
 
-    A one-to-one binding relationship is established between the AliwareMQ for IoT instance and the storage instance. Therefore, the topic is actually created on the storage instance and mapped to the AliwareMQ for IoT console. You can also perform all topic operations in the RocketMQ console.
+    A one-to-one binding relationship is established between the Message Queue for MQTT instance and the storage instance. Therefore, the topic is actually created on the storage instance and mapped to the Message Queue for MQTT console. You can also perform all topic operations in the RocketMQ console.
 
     If you have already created a topic on the RocketMQ instance, you can use this topic directly. If you have not created any topics, perform the following steps:
 
     1.  In the left-side navigation pane, click **Message Storage**.
 
-    2.  On the **Message Storage** page, select the created AliwareMQ for IoT instance and click **Create Topic**.
+    2.  On the **Message Storage** page, select the created Message Queue for MQTT instance and click **Create Topic**.
 
 ![Create a topic](images/43326_en-US.png "Create a topic")
 
     3.  In the **Create Topic** dialog box, enter a topic name, select the message type of the topic for message storage, sending, and receiving, and enter remarks. Then, click **OK**.
 
-    **Note:** To use an AliwareMQ for IoT client to send ordered messages, select the ordered message type. Currently, AliwareMQ for IoT clients do not support strongly ordered messages in consumption scenarios.
+    **Note:** To use an Message Queue for MQTT client to send ordered messages, select the ordered message type. Currently, Message Queue for MQTT clients do not support strongly ordered messages in consumption scenarios.
 
 5.  **Create a group ID**.
 
@@ -135,7 +135,7 @@ The resources include:
 
     1.  In the left-side navigation pane, click **Groups**.
 
-    2.  On the **Groups** page, select the created AliwareMQ for IoT instance and click **Create Group ID**.
+    2.  On the **Groups** page, select the created Message Queue for MQTT instance and click **Create Group ID**.
 
         ![Create a group ID](images/43327_en-US.png "Create a group ID")
 
@@ -152,15 +152,15 @@ The resources include:
 
 ## Step 2: Obtain an endpoint {#section_pyo_i1s_2xx .section}
 
-To use an SDK to send and receive messages, you must use an endpoint to access the AliwareMQ for IoT instance. An AliwareMQ for IoT instance endpoint consists of the instance domain and port.
+To use an SDK to send and receive messages, you must use an endpoint to access the Message Queue for MQTT instance. An Message Queue for MQTT instance endpoint consists of the instance domain and port.
 
-After the AliwareMQ for IoT instance and the RocketMQ instance are bound, the endpoint information is immediately displayed in the **Endpoint Information** area.
+After the Message Queue for MQTT instance and the RocketMQ instance are bound, the endpoint information is immediately displayed in the **Endpoint Information** area.
 
-You can also obtain the endpoint information by performing the following steps after binding the AliwareMQ for IoT instance and the RocketMQ instance:
+You can also obtain the endpoint information by performing the following steps after binding the Message Queue for MQTT instance and the RocketMQ instance:
 
 1.  In the top navigation bar of the console, select the region where the created resource is located, and then choose **Instances** in the left-side navigation pane.
 
-2.  On the **Instances** tab page that appears by default, select the created AliwareMQ for IoT instance and click the **Instance Information** tab.
+2.  On the **Instances** tab page that appears by default, select the created Message Queue for MQTT instance and click the **Instance Information** tab.
 
 3.  On the **Instance Information** tab page, view the domain name of the endpoint in the **Endpoint Information** area.
 
@@ -173,7 +173,7 @@ You can also obtain the endpoint information by performing the following steps a
 
 **Port**
 
-Currently, AliwareMQ for IoT supports MQTT on TCP, MQTT SSL, WebSocket, WebSocket SSL/TLS, and Flash. The corresponding service ports are listed in [Table 1](#table_vr8_2u1_b68). Replace the port number in an endpoint as required.
+Currently, Message Queue for MQTT supports MQTT on TCP, MQTT SSL, WebSocket, WebSocket SSL/TLS, and Flash. The corresponding service ports are listed in [Table 1](#table_vr8_2u1_b68). Replace the port number in an endpoint as required.
 
 |MQTT on TCP|SSL|WebSocket|WebSocket SSL/TLS|Flash|
 |-----------|---|---------|-----------------|-----|
@@ -183,7 +183,7 @@ Currently, AliwareMQ for IoT supports MQTT on TCP, MQTT SSL, WebSocket, WebSocke
 
 1.  Download the client SDK. For the download addresses of SDKs in different languages, see [Download the SDK](../intl.en-US/SDK Reference/Download the SDK.md#).
 
-    AliwareMQ for IoT supports the standard MQTT protocol by default, so we recommend that you use open source third-party client SDKs. If a client SDK in a desired language is not listed, search for MQTT-compatible SDKs on the Internet.
+    Message Queue for MQTT supports the standard MQTT protocol by default, so we recommend that you use open source third-party client SDKs. If a client SDK in a desired language is not listed, search for MQTT-compatible SDKs on the Internet.
 
 2.  Download the demo project and run the demo to send and subscribe to messages. For the download addresses of demo projects, see [Demo project](../intl.en-US/SDK Reference/Demo project.md#).
 
