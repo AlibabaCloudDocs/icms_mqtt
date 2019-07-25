@@ -1,29 +1,29 @@
 # Terms {#concept_42420_zh .concept}
 
-Before using AliwareMQ for IoT, you must understand the concepts and terms related to this service and the MQTT protocol. For information about the use cases, see [What is AliwareMQ for IoT?](intl.en-US/Product Introduction/What is AliwareMQ for IoT?.md#).
+Before using Message Queue for MQTT, you must understand the concepts and terms related to this service and the MQTT protocol. For information about the use cases, see [What is AliwareMQ for IoT?](intl.en-US/Product Introduction/What is AliwareMQ for IoT?.md#).
 
 ## Concepts {#section_0wq_m9y_osd .section}
 
  Instance
- :   An entity that you create when you purchase AliwareMQ for IoT. Each AliwareMQ for IoT instance maps to a globally unique endpoint URL. Before using AliwareMQ for IoT, you must create an instance in the corresponding region and access the service through the corresponding endpoint. For information about how to create an AliwareMQ for IoT instance, see [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
+ :   An entity that you create when you purchase Message Queue for MQTT. Each Message Queue for MQTT instance maps to a globally unique endpoint URL. Before using Message Queue for MQTT, you must create an instance in the corresponding region and access the service through the corresponding endpoint. For information about how to create an Message Queue for MQTT instance, see [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
 
   MQTT broker
- :   An AliwareMQ for IoT broker that provides interaction based on the MQTT protocol and exchanges messages with an MQTT client and AliwareMQ for RocketMQ.
+ :   An Message Queue for MQTT broker that provides interaction based on the MQTT protocol and exchanges messages with an MQTT client and AliwareMQ for RocketMQ.
 
   MQTT client
- :   A mobile node that interacts with the MQTT broker. It is short for AliwareMQ for IoT client.
+ :   A mobile node that interacts with the MQTT broker. It is short for Message Queue for MQTT client.
 
   P2P message
- :   A special type of message that is provided by AliwareMQ for IoT based on the standard MQTT protocol. This type of message can be directly sent to a specified target MQTT client without subscription matching. For more information, see [P2P messaging model](../intl.en-US/Function Overview/Advanced functions/P2P messaging model.md#).
+ :   A special type of message that is provided by Message Queue for MQTT based on the standard MQTT protocol. This type of message can be directly sent to a specified target MQTT client without subscription matching. For more information, see [P2P messaging model](../intl.en-US/Function Overview/Advanced functions/P2P messaging model.md#).
 
   Parent topic
- :   MQTT is a messaging protocol that is based on the publish-subscribe model. Therefore, each message belongs to a topic. MQTT supports multiple levels of topics. A level-1 topic is a parent topic. Before using AliwareMQ for IoT, you must create a parent topic in the AliwareMQ for IoT console or RocketMQ console.
+ :   MQTT is a messaging protocol that is based on the publish-subscribe model. Therefore, each message belongs to a topic. MQTT supports multiple levels of topics. A level-1 topic is a parent topic. Before using Message Queue for MQTT, you must create a parent topic in the Message Queue for MQTT console or RocketMQ console.
 
   Subtopic
- :   A level-2 or level-3 topic is a subtopic of a parent topic in MQTT. You can directly set subtopics in the code without having to create them in the console. Note that the total length of a parent topic and its subtopics cannot exceed 64 characters in AliwareMQ for IoT. If it is too long, a client exception may occur.
+ :   A level-2 or level-3 topic is a subtopic of a parent topic in MQTT. You can directly set subtopics in the code without having to create them in the console. Note that the total length of a parent topic and its subtopics cannot exceed 64 characters in Message Queue for MQTT. If it is too long, a client exception may occur.
 
   Client ID
- :   The globally unique identifier of each client. If two clients with the same ID are used to connect to the AliwareMQ for IoT service, the request will be denied.
+ :   The globally unique identifier of each client. If two clients with the same ID are used to connect to the Message Queue for MQTT service, the request will be denied.
 
     A client ID consists of two parts in the format of <GroupID\>@@@<DeviceID\>. A client ID can contain up to 64 characters and must not contain invisible characters. For more information, see [EN-US\_TP\_152380.md\#](intl.en-US/SDK Reference/Limits.md#).
 
@@ -36,12 +36,12 @@ Before using AliwareMQ for IoT, you must understand the concepts and terms relat
  ## Network type {#section_0t3_wdl_hk0 .section}
 
  Endpoint URL
- :   For AliwareMQ for IoT, both Internet and intranet endpoints are supported. We recommend that mobile terminals use Internet endpoints. Currently, AliwareMQ for IoT supports being accessed through port 1883 of the standard protocol. It also supports the SSL encryption, WebSocket, and Flash access methods. The endpoint URL is automatically allocated after an instance is created. Note down the URL for future reference. For information about how to create an MQTT instance, see [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
+ :   For Message Queue for MQTT, both Internet and intranet endpoints are supported. We recommend that mobile terminals use Internet endpoints. Currently, Message Queue for MQTT supports being accessed through port 1883 of the standard protocol. It also supports the SSL encryption, WebSocket, and Flash access methods. The endpoint URL is automatically allocated after an instance is created. Note down the URL for future reference. For information about how to create an MQTT instance, see [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
 
  ## MQTT-related terms {#section_bq5_obt_rhi .section}
 
  MQTT
- :   An industry standard protocol for the Internet of Things \(IoT\) and mobile Internet, which is suitable for data transmission between mobile terminals. By default, AliwareMQ for IoT supports the MQTT protocol.
+ :   An industry standard protocol for the Internet of Things \(IoT\) and mobile Internet, which is suitable for data transmission between mobile terminals. By default, Message Queue for MQTT supports the MQTT protocol.
 
   Quality of service \(QoS\)
  :   An indication of the message transmission service quality. Possible QoS levels are:
