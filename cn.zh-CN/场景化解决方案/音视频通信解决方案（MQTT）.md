@@ -68,7 +68,7 @@
 
 ## 注意事项 {#section_mo6_v53_f1a .section}
 
-上述流程简要描述了如何使用微消息队列 MQTT 和音视频通信 RTC 快速构建自己的音视频通话 App，具体的 SDK 说明请参见[微消息队列 MQTT](../intl.zh-CN/SDK 参考/SDK 下载.md#)、[消息队列 RocketMQ](https://www.alibabacloud.com/help/zh/doc-detail/114448.htm) 以及[音视频通信（RTC）](../../../../../intl.zh-CN/SDK参考/SDK下载.md#) 文档。
+上述流程简要描述了如何使用微消息队列 MQTT 和音视频通信 RTC 快速构建自己的音视频通话 App。具体的 SDK 说明请参见[微消息队列 MQTT](../intl.zh-CN/SDK 参考/SDK 下载.md#) 和[消息队列 RocketMQ](https://www.alibabacloud.com/help/zh/doc-detail/114448.htm) 文档。
 
 其中使用微消息队列 MQTT 构建音视频通话场景的信令传输时，相关的消息类型设计以及参数设计请尽可能遵循如下原则：
 
