@@ -10,7 +10,7 @@ As the administrator of the local account, the user applies for a temporary acce
 |AppServer|Application server|The server that enables users to manage local accounts and applies for and manages token services on behalf of clients|
 |AuthServer|Authentication Server|Message Queue for MQTT authorization server that processes the token-related requests that are initiated by the application server|
 
-## Procedure { .section}
+## Procedure {#section_4ok_kty_u89 .section}
 
 The token authentication mode is more complex than the signature authentication mode. You must deploy your application server based on the process shown in the following figure, and ensure that the MQTT client is initialized with the capability to interact with the application server to obtain and update tokens.
 
@@ -28,7 +28,7 @@ The procedure is as follows:
 6.  The MQTT client sets token parameters based on the specifications to connect to the MQTT broker. The MQTT client can send and receive messages after being authenticated by the MQTT broker.
 7.  The MQTT client sends and receives messages properly. If the MQTT broker determines that the token has expired, it triggers an authentication failure and disconnects the MQTT client. In this case, the MQTT client needs to re-apply for a token.
 
-## Client behavior constraints { .section}
+## Client behavior constraints {#section_va8_zup_ut9 .section}
 
 -   The MQTT client must set the token as a connection parameter in Password and upload the token when establishing a connection.
 -   The MQTT client must know the validity period of the used token and ensure that it is within the validity period. If the token expires, the MQTT broker may disconnect the MQTT client.
@@ -36,13 +36,13 @@ The procedure is as follows:
 -   The MQTT client must perform persistence of the tokens that are returned by the application server to avoid applying for the same token during each reconnection. Otherwise, the application server may crash when receiving connection requests from many MQTT clients at the same time.
 -   The MQTT client can update a token in two ways. One way is to disconnect the MQTT client first and reinitialize the connection using the new token. The other way is to use the MQTT-provided dynamic token update function through system topics. If the token is updated dynamically, the MQTT client must ensure that the local configuration is also updated to avoid that the old token is used during the next connection initialization.
 
-## Application server behavior constraints { .section}
+## Application server behavior constraints {#section_oa8_b3b_nkk .section}
 
 -   The application server must authenticate the MQTT client to prevent the MQTT client from applying for a token by using a forged identity.
 -   The application server must manage the token-client relationship to prevent the same MQTT client from calling a token repeatedly.
 -   The application server must implement local disaster recovery to prevent service congestion due to temporary failed access to the authorization server.
 
-## Related APIs { .section}
+## Related APIs {#section_15f_mpm_c9x .section}
 
 You can call related APIs to implement token authentication.
 
@@ -50,7 +50,7 @@ The application server is responsible for token application and revocation, and 
 
 Message Queue for MQTT clients provide three APIs for dynamic token update, listening to token expiration notifications, and listening to token invalidity notifications, respectively.
 
-## Token service addresses { .section}
+## Token service addresses {#section_0u2_6xi_tc7 .section}
 
 Currently, the token service supports public cloud regions in Mainland China and the Singapore region. Finance Cloud is not supported at present. The specific service addresses are as follows:
 
