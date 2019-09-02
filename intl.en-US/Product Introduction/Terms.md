@@ -1,6 +1,6 @@
 # Terms {#concept_42420_zh .concept}
 
-Before using Message Queue for MQTT, you must understand the concepts and terms related to this service and the MQTT protocol. For information about the use cases, see [What is AliwareMQ for IoT?](intl.en-US/Product Introduction/What is AliwareMQ for IoT?.md#).
+Before using Message Queue for MQTT, you must understand the concepts and terms related to this service and the MQTT protocol. For information about the use cases, see [What is Message Queue for MQTT?](intl.en-US/Product Introduction/What is Message Queue for MQTT?.md#).
 
 ## Concepts {#section_0wq_m9y_osd .section}
 
@@ -8,7 +8,7 @@ Before using Message Queue for MQTT, you must understand the concepts and terms 
  :   An entity that you create when you purchase Message Queue for MQTT. Each Message Queue for MQTT instance maps to a globally unique endpoint URL. Before using Message Queue for MQTT, you must create an instance in the corresponding region and access the service through the corresponding endpoint. For information about how to create an Message Queue for MQTT instance, see [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
 
   MQTT broker
- :   An Message Queue for MQTT broker that provides interaction based on the MQTT protocol and exchanges messages with an MQTT client and AliwareMQ for RocketMQ.
+ :   An Message Queue for MQTT broker that provides interaction based on the MQTT protocol and exchanges messages with an MQTT client and MQ for RocketMQ.
 
   MQTT client
  :   A mobile node that interacts with the MQTT broker. It is short for Message Queue for MQTT client.
@@ -28,7 +28,7 @@ Before using Message Queue for MQTT, you must understand the concepts and terms 
     A client ID consists of two parts in the format of <GroupID\>@@@<DeviceID\>. A client ID can contain up to 64 characters and must not contain invisible characters. For more information, see [EN-US\_TP\_152380.md\#](intl.en-US/SDK Reference/Limits.md#).
 
   Group ID
- :   An identifier that specifies the name of a group of nodes with identical logic and functions, representing a category of devices with the same functions. To use a group ID, you must first create it in the AliwareMQ for IoT console. For information about how to create a group ID, see [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
+ :   An identifier that specifies the name of a group of nodes with identical logic and functions, representing a category of devices with the same functions. To use a group ID, you must first create it in the MQ for MQTT console. For information about how to create a group ID, see [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
 
   Device ID
  :   A unique identifier for each device that you specify. A device ID must be globally unique, for example, the serial number of a sensor.
