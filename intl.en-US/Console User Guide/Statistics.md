@@ -1,6 +1,6 @@
 # Statistics {#task522 .task}
 
-You can query the number and TPS of the messages that are sent and received by all the topics in the AliwareMQ for IoT console. You can set multiple filters and customize the time range for a query.
+You can query the number and TPS of the messages that are sent and received by all the topics in the MQ for MQTT console. You can set multiple filters and customize the time range for a query.
 
 You can go to the query page from one of the following paths:
 
