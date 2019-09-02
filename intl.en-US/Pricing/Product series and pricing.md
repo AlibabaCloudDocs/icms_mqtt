@@ -1,30 +1,30 @@
 # Product series and pricing {#concept_52819_zh .concept}
 
-This topic describes the instance types and billing models of AliwareMQ for IoT. However, the prices and promotions on the [Purchase](https://common-buy.aliyun.com/?spm=a2c4g.11186623.2.23.7a0852detgpXCl&commodityCode=onsMqtt#/buy) page shall prevail.
+This topic describes the instance types and billing models of MQ for MQTT. However, the prices and promotions on the [Purchase](https://common-buy.aliyun.com/?spm=a2c4g.11186623.2.23.7a0852detgpXCl&commodityCode=onsMqtt#/buy) page shall prevail.
 
- ![Product series](images/43248_en-US.png "Product series") 
+ ![](images/43248_en-US.png "Product series")
 
-## Instance types { .section}
+## Instance types {#section_k6h_rno_s9h .section}
 
-[Table 1](#table_ewj_cg4_hhb) describes the instance types and billing models of AliwareMQ for IoT.
+[Table 1](#table_ewj_cg4_hhb) describes the instance types and billing models of MQ for MQTT.
 
 |Instance type|Instance model|Billing model|Scenarios|
 |-------------|--------------|-------------|---------|
-|Pay-As-You-Go instance|Pay-As-You-Go instances are shared services of AliwareMQ for IoT, that is, their underlying hardware resources are shared. Multiple instances share the same backend cluster, and MQTT ensures service availability in multi-tenant scenarios.|The instances are billed in Pay-As-You-Go mode based on your actual usage.|Pay-As-You-Go instances are billed based on actual usage, so they are applicable to scenarios with large changes and fluctuations in business scale.|
-|Basic Edition instance|Basic Edition instances are shared services of AliwareMQ for IoT, that is, their underlying hardware resources are shared. Multiple instances share the same backend cluster, and MQTT ensures service availability in multi-tenant scenarios.|The instances are billed in subscription mode based on their specifications.|With low specifications and low prices, the Basic Edition instances are suitable for customers with small business scale.|
-|Enterprise Platinum Edition instance|Enterprise Platinum Edition instances are exclusive services of AliwareMQ for IoT, that is, the underlying hardware resources are exclusive. Each Enterprise Platinum Edition instance is deployed as an independent cluster, will not be affected by the business peaks of other users, and enjoys after-sales services and stability assurance with a higher priority.|The instances are billed in subscription mode based on their specifications.|With larger specifications and a higher cost, Enterprise Platinum Edition instances are suitable for users with large business scale and customization requirements.|
+|Pay-As-You-Go instance|Pay-As-You-Go instances are shared services of MQ for MQTT, that is, their underlying hardware resources are shared. Multiple instances share the same backend cluster, and MQTT ensures service availability in multi-tenant scenarios.|The instances are billed in Pay-As-You-Go mode based on your actual usage.|Pay-As-You-Go instances are billed based on actual usage, so they are applicable to scenarios with large changes and fluctuations in business scale.|
+|Basic Edition instance|Basic Edition instances are shared services of MQ for MQTT, that is, their underlying hardware resources are shared. Multiple instances share the same backend cluster, and MQTT ensures service availability in multi-tenant scenarios.|The instances are billed in subscription mode based on their specifications.|With low specifications and low prices, the Basic Edition instances are suitable for customers with small business scale.|
+|Enterprise Platinum Edition instance|Enterprise Platinum Edition instances are exclusive services of MQ for MQTT, that is, the underlying hardware resources are exclusive. Each Enterprise Platinum Edition instance is deployed as an independent cluster, will not be affected by the business peaks of other users, and enjoys after-sales services and stability assurance with a higher priority.|The instances are billed in subscription mode based on their specifications.|With larger specifications and a higher cost, Enterprise Platinum Edition instances are suitable for users with large business scale and customization requirements.|
 
-## Subscription billing { .section}
+## Subscription billing {#section_w4i_7kd_qmu .section}
 
 **1. Message sending and receiving TPS \(subscription\)**
 
 **Definition**
 
-Message sending and receiving TPS refers to the number of messages that are sent uplink and received downlink per second over protocols supported by AliwareMQ for IoT, such as MQTT, China National GB-808 Standards, and China New Energy Vehicle National Standards.
+Message sending and receiving TPS refers to the number of messages that are sent uplink and received downlink per second over protocols supported by MQ for MQTT, such as MQTT, China National GB-808 Standards, and China New Energy Vehicle National Standards.
 
 **Note**
 
--   Message TPS refers to messages sent and received directly through AliwareMQ for IoT, excluding messages directly sent and received through RocketMQ.
+-   Message TPS refers to messages sent and received directly through MQ for MQTT, excluding messages directly sent and received through RocketMQ.
 -   The message TPS includes the TPS of received messages and the TPS of sent messages.
 -   If messages with QoS = 1 and cleanSession = false are not pushed successfully, they are stored as offline messages for retrying. Offline message storage is also considered as one push call.
 -   Each message is treated as a basic billing unit in the calculation of message receiving and sending TPS. Messages that require different transmission quality levels specified in a specific protocol are counted with a corresponding multiplication ratio in billing. For more information, see the following table.
@@ -74,18 +74,18 @@ The number of subscription relationships refers to the number of subscription ru
 
 Assume that \[instance\_a\] has two devices: client\_1 and client\_2. client\_1 subscribes to TopicA/sub\_1, TopicA/sub\_2, and TopicB. client\_2 subscribes to TopicA/sub\_1 and TopicB/sub\_2. The number of subscription relationships for \[instance\_a\] is 5 \(3 + 2 = 5\).
 
-## Billing of Pay-As-You-Go instances { .section}
+## Billing of Pay-As-You-Go instances {#section_vj6_jjv_nne .section}
 
 **1. Number of sent and received messages**
 
 **Definition**
 
-The number of sent and received messages refers to the total number of messages that are sent uplink and received downlink over protocols supported by AliwareMQ for IoT, such as MQTT, China National GB-808 Standards, and China New Energy Vehicle National Standards.
+The number of sent and received messages refers to the total number of messages that are sent uplink and received downlink over protocols supported by MQ for MQTT, such as MQTT, China National GB-808 Standards, and China New Energy Vehicle National Standards.
 
 **Note**
 
 -   The billing cycle is one day, that is, the number of messages in the 24 hours from 00:00 of the previous day is counted in the daily bill.
--   The number of sent and received messages counts only messages that are sent and received directly through AliwareMQ for IoT, excluding messages directly sent and received through RocketMQ.
+-   The number of sent and received messages counts only messages that are sent and received directly through MQ for MQTT, excluding messages directly sent and received through RocketMQ.
 -   If messages with QoS = 1 and cleanSession = false are not pushed successfully, they are stored as offline messages for retrying. Offline message storage is also considered as one push call.
 -   Each message is treated as a basic billing unit in the calculation of the number of sent and received messages. Messages in different transmission quality levels specified in a specific protocol are counted with a corresponding multiplication ratio in billing.
 
