@@ -21,7 +21,7 @@ Only the topics and group IDs on the same instance in the same region can be int
 
 [Figure 1](#fig_dsf_ny4_hhb) shows how to send and receive messages through Message Queue for MQTT.
 
- ![Quick start flowchart](images/43300_en-US.png "Quick start process")
+![Quick start flowchart](images/43300_en-US.png "Quick start process")
 
 As shown in [Figure 1](#fig_dsf_ny4_hhb), you must create resources before sending and receiving messages on a client. Otherwise, the Message Queue for MQTT broker may deny the connections with invalid client IDs.
 
@@ -206,6 +206,6 @@ In addition to sending messages by using an SDK or API, you can send messages in
 
     The console returns a notification that the message has been sent successfully and the corresponding message ID.
 
-     ![The message has been sent successfully.](images/43329_en-US.png "Sent successfully")
+    ![The message has been sent successfully.](images/43329_en-US.png "Sent successfully")
 
 
