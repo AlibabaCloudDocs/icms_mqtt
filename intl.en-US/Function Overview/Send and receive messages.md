@@ -1,8 +1,8 @@
 # Send and receive messages {#concept_opl_mnw_hhb .concept}
 
-AliwareMQ for IoT supports message sending and receiving in multiple languages. This topic provides links to sample code of using AliwareMQ for IoT separately and with RocketMQ in combination to send and receive messages in different languages.
+MQ for MQTT supports message sending and receiving in multiple languages. This topic provides links to sample code of using MQ for MQTT separately and with RocketMQ in combination to send and receive messages in different languages.
 
-## Use AliwareMQ for IoT separately to send and receive messages {#section_w1t_nww_hhb .section}
+## Use MQ for MQTT separately to send and receive messages {#section_w1t_nww_hhb .section}
 
 |Language|Sample code|
 |--------|-----------|
@@ -14,13 +14,13 @@ AliwareMQ for IoT supports message sending and receiving in multiple languages. 
 |iOS|[https://github.com/AliwareMQ/lmq-demo/tree/master/lmq-ios-demo/MQTTChatDemo](https://github.com/AliwareMQ/lmq-demo/tree/master/lmq-ios-demo/MQTTChatDemo)|
 |PHP|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTSendMessageToMQTT.php](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTSendMessageToMQTT.php)|
 
-## Use AliwareMQ for IoT to send messages and RocketMQ to receive messages {#section_d5n_bxw_hhb .section}
+## Use MQ for MQTT to send messages and RocketMQ to receive messages {#section_d5n_bxw_hhb .section}
 
 |Language|Sample code|
 |--------|-----------|
 |Java|[https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-java-demo/src/main/java/com/aliyun/openservices/lmq/example/demo/MQ4IoTSendMessageToRocketMQ.java](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-java-demo/src/main/java/com/aliyun/openservices/lmq/example/demo/MQ4IoTSendMessageToRocketMQ.java)|
 
-## Use RocketMQ to send messages and AliwareMQ for IoT to receive messages {#section_uwh_cxw_hhb .section}
+## Use RocketMQ to send messages and MQ for MQTT to receive messages {#section_uwh_cxw_hhb .section}
 
 |Language|Sample code|
 |--------|-----------|
