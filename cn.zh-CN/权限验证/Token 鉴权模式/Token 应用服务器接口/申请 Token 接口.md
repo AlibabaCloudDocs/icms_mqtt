@@ -8,6 +8,10 @@ https://\{tokenServerUrl\}/token/apply
 
 申请 Token 的接口应该由应用服务器发起，应用服务器验证 MQTT 客户端的权限范围后代替客户端向 MQTT 认证服务器申请 Token。
 
+## 使用限制 {#section_hzv_lu9_jd8 .section}
+
+单用户请求频率限制为 1000 次/秒。如有特殊需求，请[提交工单](https://workorder.console.aliyun.com/console.htm?lang=#/ticket/list/)申请。
+
 ## 请求参数 {#section_yjk_jm4_hhb .section}
 
 |名称|类型|说明|
@@ -19,9 +23,9 @@ https://\{tokenServerUrl\}/token/apply
 
  |
 |accessKey|String|当前请求使用的账号的 AccessKeyId。|
-|expireTime|long|Token 失效的毫秒时间戳，允许设置的失效最小间隔是 60 秒|
+|expireTime|long|Token 失效的毫秒时间戳，允许设置的失效最小间隔是 60 秒，最长为 1 个月。|
 |proxyType|String|Token 类型，填 MQTT，根据实际产品选择。|
-|serviceName|String|填 mq，其他参数无效 。|
+|serviceName|String|填 **mq**，其他参数无效 。|
 |instanceId|String|MQTT 实例 ID，一定要和客户端实际使用的实例 ID 匹配。|
 |signature|String|签名字符串，本请求需要计算签名的字段是 actions、resources、expireTime、serviceName、instanceId。|
 
