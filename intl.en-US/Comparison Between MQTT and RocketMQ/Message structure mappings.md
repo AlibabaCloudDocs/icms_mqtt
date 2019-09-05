@@ -12,7 +12,7 @@ For more information about MQ for MQTT, see [What is Message Queue for MQTT?](..
 
 MQ for MQTT and RocketMQ are messaging systems that are based on the publish-subscribe model and have similar concepts. The following figure shows the differences in the major concepts and mappings between MQ for MQTT and RocketMQ.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/152389/156739406443276_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/152389/156765972443276_en-US.png)
 
 As shown in the preceding figure, MQ for MQTT supports multi-level topics, whereas RocketMQ supports one-level topics. Therefore, a level-1 topic in MQ for MQTT is mapped to a topic in RocketMQ, and level-2 and -3 topics in MQ for MQTT are mapped to the message properties in RocketMQ.
 
