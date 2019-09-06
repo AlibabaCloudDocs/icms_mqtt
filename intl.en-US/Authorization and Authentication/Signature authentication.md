@@ -1,6 +1,6 @@
 # Signature authentication {#concept_g5d_mk4_hhb .concept}
 
-This topic describes how to calculate a signature and create a signature in the console when signature authentication is used by AliwareMQ for IoT.
+This topic describes how to calculate a signature and create a signature in the console when signature authentication is used by MQ for MQTT.
 
 ## Use the MQTT SDK to access the MQTT broker {#section_k3l_4k4_hhb .section}
 
@@ -24,9 +24,9 @@ Each language provides a function library to implement the HMAC algorithm. You c
 
 ## Verify the signature in the console {#section_ijc_5k4_hhb .section}
 
-The AliwareMQ for IoT console provides the signature calculation tool so that you can compare and check whether your signature calculation is correct.
+The MQ for MQTT console provides the signature calculation tool so that you can compare and check whether your signature calculation is correct.
 
-In the left-side navigation pane of the AliwareMQ for IoT console, choose **Signature Verification**, and enter the AccessKeyId, AccessKeySecret, and Client ID of the application-used account to obtain the Username and Password parameters that need to be set in the application.
+In the left-side navigation pane of the MQ for MQTT console, choose **Signature Verification**, and enter the AccessKeyId, AccessKeySecret, and Client ID of the application-used account to obtain the Username and Password parameters that need to be set in the application.
 
 **Note:** 
 

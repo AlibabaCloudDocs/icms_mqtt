@@ -1,8 +1,8 @@
 # Retrieve the online status of the client {#concept_50069_zh .concept}
 
-You can retrieve the current online status of the AliwareMQ for IoT client \(referred to here as the client\) by using the synchronous query method or asynchronous online/offline notification method.
+You can retrieve the current online status of the Message Queue for MQTT client \(referred to here as the client\) by using the synchronous query method or asynchronous online/offline notification method.
 
-AliwareMQ for IoT must be used with backend MQ services \(such as AliwareMQ for RocketMQ\) and work with applications that are deployed on cloud servers \(hereinafter referred to as service applications\) to complete service processes.
+Message Queue for MQTT must be used with backend MQ services \(such as AliwareMQ for RocketMQ\) and work with applications that are deployed on cloud servers \(hereinafter referred to as service applications\) to complete service processes.
 
 The main scenarios for retrieving the online status of the client are as follows:
 
@@ -12,7 +12,7 @@ The main scenarios for retrieving the online status of the client are as follows
 
 ## Basic principle {#section_1e4_ef7_7m2 .section}
 
-The AliwareMQ for IoT broker supports the following methods for retrieving the online status of the client:
+The Message Queue for MQTT broker supports the following methods for retrieving the online status of the client:
 
 -   Call the synchronous query interface
 
@@ -100,13 +100,13 @@ The following uses AliwareMQ for RocketMQ as backend MQ to demonstrate this.
 
 1.  Create a topic that corresponds to online and offline events.
 
-    In the AliwareMQ for IoT console, create a topic for the device with the target group ID. For information about how to create a topic, see **Create a topic and group ID** in [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
+    In the Message Queue for MQTT console, create a topic for the device with the target group ID. For information about how to create a topic, see **Create a topic and group ID** in [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
 
     For example, if the target client type corresponds to the group ID GID\_XXX, then the client ID and topic for this client type are GID\_XXX@@@YYYYY and GID\_XXX\_MQTT, respectively.
 
     Specifically:
 
-    -   GID\_XXX indicates the group ID created in the AliwareMQ for IoT console.
+    -   GID\_XXX indicates the group ID created in the Message Queue for MQTT console.
     -   YYYYY indicates the device ID and is concatenated with the group ID to form the client ID in the format of <GroupID\>@@@<DeviceID\>.
     -   \_MQTT indicates the fixed suffix that is required in the name of the topic for this type of event notifications.
     For more information, see [Terms](../intl.en-US/Product Introduction/Terms.md#).

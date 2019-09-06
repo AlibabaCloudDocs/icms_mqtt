@@ -10,7 +10,7 @@
 
 在[https://github.com/AliwareMQ/lmq-demo](https://github.com/AliwareMQ/lmq-demo)下载 Demo 工程到本地：
 
- ![](images/43330_zh-CN.png "Demo 下载")
+ ![](images/43330_zh-CN.png "Demo 下载") 
 
 下载完成后解压即可看到本地新增了 lmq-demo 文件夹。其中一级文件夹是按照开发语言进行分类，请按照实际需求进行调试。
 

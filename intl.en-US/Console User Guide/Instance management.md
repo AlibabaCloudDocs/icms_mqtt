@@ -24,7 +24,7 @@ You can configure automatic renewal for subscription instances in the Alibaba Cl
 2.  In the left-side navigation pane, choose **MQTT**. Locate the row that contains the target instance and click **Auto Renew** in the **Actions** column.
 
 
-## Change instance configuration { .section}
+## Change instance configuration {#section_inc_2ef_eev .section}
 
 You need to scale out instances through configuration changes to handle the increasing service scale.
 
@@ -36,18 +36,18 @@ You need to scale out instances through configuration changes to handle the incr
 
     **Note:** 
 
-    -   The upgraded configuration of a Basic Edition instance takes effect in real time. The upgrade of an Enterprise Platinum Edition instance must be performed by a technical engineer of AliwareMQ for IoT. The upgrade may take some time and does not affect service operation.
+    -   The upgraded configuration of a Basic Edition instance takes effect in real time. The upgrade of an Enterprise Platinum Edition instance must be performed by a technical engineer of MQ for MQTT. The upgrade may take some time and does not affect service operation.
 
     -   Instance downgrading takes effect in real time. Note that refunds are unavailable for downgrades, so we recommend that you downgrade configuration near the end of a billing cycle.
 
     -   Cross-version downgrading is not supported. That is, the Basic Edition configuration cannot be changed to the Enterprise Platinum Edition, and vice versa.
 
 
-## Perform instance O&M { .section}
+## Perform instance O&M {#section_ix7_beb_ips .section}
 
 You can view instance statistics during the instance runtime, including the message sending and receiving TPS, subscriptions, and client connections. You can set the instance alarm function to monitor instance usage in real time.
 
-## View instance statistics { .section}
+## View instance statistics {#section_rxy_2mt_dx3 .section}
 
 1.  In the left-side navigation pane, choose **Instances**.
 
@@ -58,9 +58,9 @@ You can view instance statistics during the instance runtime, including the mess
     ![](images/42292_en-US.png "Instance O&M statistics")
 
 
-## Set the instance monitoring alarm { .section}
+## Set the instance monitoring alarm {#section_dgn_lk7_nh0 .section}
 
-AliwareMQ for IoT provides a series of metrics on a per-instance basis, such as message sending and receiving TPS, subscriptions, and client connections. You can configure the sending of alarm messages to the mobile phone numbers of contacts when these metrics exceed the alarm thresholds, to notify them to promptly upgrade specifications.
+MQ for MQTT provides a series of metrics on a per-instance basis, such as message sending and receiving TPS, subscriptions, and client connections. You can configure the sending of alarm messages to the mobile phone numbers of contacts when these metrics exceed the alarm thresholds, to notify them to promptly upgrade specifications.
 
 The alarm thresholds are set to 70% of the capacity by default. You can define the alarm thresholds and alarm switches.
 
