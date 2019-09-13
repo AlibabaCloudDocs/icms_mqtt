@@ -2,7 +2,7 @@
 
 You can retrieve the current online status of the Message Queue for MQTT client \(referred to here as the client\) by using the synchronous query method or asynchronous online/offline notification method.
 
-Message Queue for MQTT must be used with backend MQ services \(such as AliwareMQ for RocketMQ\) and work with applications that are deployed on cloud servers \(hereinafter referred to as service applications\) to complete service processes.
+Message Queue for MQTT must be used with backend MQ services \(such as MQ\) and work with applications that are deployed on cloud servers \(hereinafter referred to as service applications\) to complete service processes.
 
 The main scenarios for retrieving the online status of the client are as follows:
 
@@ -94,7 +94,7 @@ The synchronous query method is currently under public beta and is only availabl
 
 As described in [Basic principle](#section_1e4_ef7_7m2), if the asynchronous online/offline notification method is used, online and offline events are mapped to backend MQ.
 
-The following uses AliwareMQ for RocketMQ as backend MQ to demonstrate this.
+The following uses MQ as backend MQ to demonstrate this.
 
 **Procedure**
 
@@ -113,9 +113,9 @@ The following uses AliwareMQ for RocketMQ as backend MQ to demonstrate this.
 
 2.  Service applications subscribe to this type of notifications.
 
-    Use the topic created in [step 1](#li_p5g_4qs_qnj) to receive the online and offline events of the target client. For information about how to receive messages from AliwareMQ for RocketMQ, see [Subscribe to messages](https://help.aliyun.com/document_detail/29551.html?spm=a2c4g.11186623.2.17.b6d83bcdcXvtmD).
+    Use the topic created in [step 1](#li_p5g_4qs_qnj) to receive the online and offline events of the target client. For information about how to receive messages from MQ, see [Subscribe to messages](https://help.aliyun.com/document_detail/29551.html?spm=a2c4g.11186623.2.17.b6d83bcdcXvtmD).
 
-    The event type is included in a RocketMQ message tag, indicating whether it is an online or offline event. The data format is as follows:
+    The event type is included in an MQ message tag, indicating whether it is an online or offline event. The data format is as follows:
 
     `RocketMQ Tag: connect/disconnect/tcpclean`
 
