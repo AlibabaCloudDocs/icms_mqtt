@@ -20,7 +20,7 @@ With the support for multiple protocols, languages, and platforms, Message Queue
 
 ## Benefits {#section_vwc_fbj_shb .section}
 
-Message Queue for MQTT mainly provides mobile connection access, connection management, and data forwarding services. MQ for MQTT can be used with other Alibaba Cloud MQ services that support backend data persistence and message storage, such as traditional MOM \(MQ for RocketMQ and Kafka\). Also, it can serve as a connection gateway with unlimited scalability.Message Queue for MQTT is designed with a distributed architecture. With no single point of failure \(SPOF\) and infinite scalability between components, its architecture ensures that its capacity is completely transparent to you and can be adjusted according to your online usage.
+Message Queue for MQTT mainly provides mobile connection access, connection management, and data forwarding services. MQ for MQTT can be used with other Alibaba Cloud MQ services that support backend data persistence and message storage, such as traditional MOM \(MQ for MQ and Kafka\). Also, it can serve as a connection gateway with unlimited scalability.Message Queue for MQTT is designed with a distributed architecture. With no single point of failure \(SPOF\) and infinite scalability between components, its architecture ensures that its capacity is completely transparent to you and can be adjusted according to your online usage.
 
 [Figure 3](#fig_vnq_rkh_hhb) shows the benefits of Message Queue for MQTT.
 
