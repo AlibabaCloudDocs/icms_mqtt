@@ -61,8 +61,8 @@ The general principle of model selection is as follows:
 
 The following table lists the selection recommendations on MQ for MQTT and MQ in common scenarios.
 
-|Scenario|Deployment|MQ for MQTT|RocketMQ|
-|--------|----------|-----------|--------|
+|Scenario|Deployment|MQ for MQTT|MQ|
+|--------|----------|-----------|--|
 |Status data reporting by devices|Mobile device|√|×|
 |Receiving, processing, and analysis of device-reported data|Mobile device|×|√|
 |Delivery of control commands to multiple devices|Server|×|√|
