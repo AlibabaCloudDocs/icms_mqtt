@@ -2,7 +2,7 @@
 
 The demo project includes the use instructions on MQ for MQTT in various scenarios. For more information, see the document comments of the application source code.
 
-If you use MQ for MQTT with other backend message storage services, such as RocketMQ, see [Message structure mappings](../../../../intl.en-US/Comparison Between MQTT and RocketMQ/Message structure mappings.md#)"Understand the message-property mappings."
+If you use MQ for MQTT with other backend message storage services, such as MQ, see [Message structure mappings](../../../../intl.en-US/Comparison Between MQTT and MQ/Message structure mappings.md#)"Understand the message-property mappings."
 
 **Note:** The demo project integrity may vary depending on specific languages, which will be updated in the future. If some features do not have any demo, test these features based on the Java example.
 
