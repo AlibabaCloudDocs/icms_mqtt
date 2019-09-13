@@ -24,7 +24,7 @@ Message sending and receiving TPS refers to the number of messages that are sent
 
 **Note**
 
--   Message TPS refers to messages sent and received directly through MQ for MQTT, excluding messages directly sent and received through RocketMQ.
+-   Message TPS refers to messages sent and received directly through MQ for MQTT, excluding messages directly sent and received through MQ.
 -   The message TPS includes the TPS of received messages and the TPS of sent messages.
 -   If messages with QoS = 1 and cleanSession = false are not pushed successfully, they are stored as offline messages for retrying. Offline message storage is also considered as one push call.
 -   Each message is treated as a basic billing unit in the calculation of message receiving and sending TPS. Messages that require different transmission quality levels specified in a specific protocol are counted with a corresponding multiplication ratio in billing. For more information, see the following table.
@@ -85,7 +85,7 @@ The number of sent and received messages refers to the total number of messages 
 **Note**
 
 -   The billing cycle is one day, that is, the number of messages in the 24 hours from 00:00 of the previous day is counted in the daily bill.
--   The number of sent and received messages counts only messages that are sent and received directly through MQ for MQTT, excluding messages directly sent and received through RocketMQ.
+-   The number of sent and received messages counts only messages that are sent and received directly through MQ for MQTT, excluding messages directly sent and received through MQ.
 -   If messages with QoS = 1 and cleanSession = false are not pushed successfully, they are stored as offline messages for retrying. Offline message storage is also considered as one push call.
 -   Each message is treated as a basic billing unit in the calculation of the number of sent and received messages. Messages in different transmission quality levels specified in a specific protocol are counted with a corresponding multiplication ratio in billing.
 
