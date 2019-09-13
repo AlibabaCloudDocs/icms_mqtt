@@ -29,7 +29,7 @@
 
 -   您已经开通母产品消息队列 MQ 的服务。如未开通，请先[开通](https://common-buy.aliyun.com/?spm=5176.ons.0.0.514e6c5c76HC2o&commodityCode=ons#/open)该服务。
 
--   您已经拥有了阿里云 AccessKey（AK）。详情请参见[创建AccessKey](../../../../../cn.zh-CN/通用参考/创建AccessKey.md#)。
+-   您已经拥有了阿里云 AccessKey（AK）。详情请参见[创建AccessKey](../../../../../intl.zh-CN/通用参考/创建AccessKey.md#)。
 
 
 ## 步骤一：创建资源 {#section_kx4_3rp_hhb .section}
@@ -131,7 +131,7 @@
 
 5.  **创建 Group ID**。
 
-    微消息队列 MQTT 的 Group ID 用于指定一组逻辑功能完全一致的节点共用的组名，代表一类相同功能的设备。Group ID 和 Device ID 共同组成用于识别 MQTT 客户端的 Client ID。更多信息请参见[名词解释](../cn.zh-CN/产品简介/名词解释.md#)。
+    微消息队列 MQTT 的 Group ID 用于指定一组逻辑功能完全一致的节点共用的组名，代表一类相同功能的设备。Group ID 和 Device ID 共同组成用于识别 MQTT 客户端的 Client ID。更多信息请参见[名词解释](../intl.zh-CN/产品简介/名词解释.md#)。
 
     1.  在左侧导航栏选择 **Group 管理**。
 
@@ -181,11 +181,11 @@
 
 ## 步骤三：调用 SDK 发送和订阅消息 {#section_rsi_ewa_e31 .section}
 
-1.  下载客户端的 SDK。关于各语言 SDK 的下载地址，请参见 [SDK 下载](../cn.zh-CN/SDK 参考/SDK 下载.md#)。
+1.  下载客户端的 SDK。关于各语言 SDK 的下载地址，请参见 [SDK 下载](../intl.zh-CN/SDK 参考/SDK 下载.md#)。
 
     由于微消息队列 MQTT 默认支持的是标准的 MQTT 协议，因此客户端 SDK 都是推荐开源的第三方 SDK，如果有其他语言没有覆盖，可以自行搜索 MQTT 兼容的 SDK 测试。
 
-2.  下载 Demo 工程，然后运行 Demo 进行消息发送和订阅。关于 Demo 下载地址，请参见 [Demo 工程](../cn.zh-CN/SDK 参考/Demo 工程.md#)。
+2.  下载 Demo 工程，然后运行 Demo 进行消息发送和订阅。关于 Demo 下载地址，请参见 [Demo 工程](../intl.zh-CN/SDK 参考/Demo 工程.md#)。
 
     目前的 Demo 程序库只覆盖了一部分主流语言，后续会陆续更新。如果没有覆盖对应的开发语言，可以参考 Java 语言的 Demo 进行修改。Demo 工程仅提供一个基本的功能展示，具体应用到线上环境，所有参数务必进行修改。
 
