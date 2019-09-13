@@ -30,7 +30,7 @@ In the left-side navigation pane of the MQ for MQTT console, choose **Signature 
 
 **Note:** 
 
-The tool uses only frontend JavaScript of the web browser for calculation and does not transmit AccessKeySecret to RocketMQ, removing the risk of AccessKeySecret disclosure. In the actual situation, the tool is only used by the console for troubleshooting and data comparison.
+The tool uses only frontend JavaScript of the web browser for calculation and does not transmit AccessKeySecret to MQ, removing the risk of AccessKeySecret disclosure. In the actual situation, the tool is only used by the console for troubleshooting and data comparison.
 
 Calculate the signature on the MQTT client. Alternatively, calculate on the MQTT broker and then send the result to the MQTT client for security purposes.
 
