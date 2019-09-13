@@ -59,7 +59,7 @@ CSG 的两种部署模式下的公网和内网互通的架构图如[图 1](#fig_
 
 ## 注意事项 {#section_ys4_pab_rqb .section}
 
-上述流程简要描述了如何使用微消息队列 MQTT 和消息队列 RocketMQ 实现统一的跨网络的管理架构，具体的 SDK 说明请参见[微消息队列 MQTT](../cn.zh-CN/SDK 参考/SDK 下载.md#) 和[消息队列 RocketMQ](https://help.aliyun.com/document_detail/114448.html) 文档。
+上述流程简要描述了如何使用微消息队列 MQTT 和消息队列 MQ 实现统一的跨网络的管理架构，具体的 SDK 说明请参见[微消息队列 MQTT](../cn.zh-CN/SDK 参考/SDK 下载.md#) 和[消息队列 MQ](https://help.aliyun.com/document_detail/114448.html) 文档。
 
 其中使用微消息队列 MQTT 构建跨网络的信令传输时，相关的消息类型设计以及参数设计请尽可能遵循如下原则：
 
