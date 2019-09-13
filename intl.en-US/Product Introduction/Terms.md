@@ -8,7 +8,7 @@ Before using Message Queue for MQTT, you must understand the concepts and terms 
  :   An entity that you create when you purchase Message Queue for MQTT. Each Message Queue for MQTT instance maps to a globally unique endpoint URL. Before using Message Queue for MQTT, you must create an instance in the corresponding region and access the service through the corresponding endpoint. For information about how to create an Message Queue for MQTT instance, see [Quick start guide](../intl.en-US/Quick Start/Quick start guide.md#).
 
   MQTT broker
- :   An Message Queue for MQTT broker that provides interaction based on the MQTT protocol and exchanges messages with an MQTT client and MQ for RocketMQ.
+ :   An Message Queue for MQTT broker that provides interaction based on the MQTT protocol and exchanges messages with an MQTT client and MQ for MQ.
 
   MQTT client
  :   A mobile node that interacts with the MQTT broker. It is short for Message Queue for MQTT client.
@@ -17,7 +17,7 @@ Before using Message Queue for MQTT, you must understand the concepts and terms 
  :   A special type of message that is provided by Message Queue for MQTT based on the standard MQTT protocol. This type of message can be directly sent to a specified target MQTT client without subscription matching. For more information, see [P2P messaging model](../intl.en-US/Function Overview/Advanced functions/P2P messaging model.md#).
 
   Parent topic
- :   MQTT is a messaging protocol that is based on the publish-subscribe model. Therefore, each message belongs to a topic. MQTT supports multiple levels of topics. A level-1 topic is a parent topic. Before using Message Queue for MQTT, you must create a parent topic in the Message Queue for MQTT console or RocketMQ console.
+ :   MQTT is a messaging protocol that is based on the publish-subscribe model. Therefore, each message belongs to a topic. MQTT supports multiple levels of topics. A level-1 topic is a parent topic. Before using Message Queue for MQTT, you must create a parent topic in the Message Queue for MQTT console or MQ console.
 
   Subtopic
  :   A level-2 or level-3 topic is a subtopic of a parent topic in MQTT. You can directly set subtopics in the code without having to create them in the console. Note that the total length of a parent topic and its subtopics cannot exceed 64 characters in Message Queue for MQTT. If it is too long, a client exception may occur.
