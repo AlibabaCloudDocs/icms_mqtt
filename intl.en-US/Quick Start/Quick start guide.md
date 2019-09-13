@@ -9,9 +9,9 @@ If you want to access through a non-MQTT protocol, such as China New Energy Vehi
 Message Queue for MQTT must be used with backend MQ.
 
 -   An Message Queue for MQTT instance is a stateless gateway instance that is used to maintain client connections and to forward messages in mobile Internet and IoT scenarios. It does not support message data persistence. Therefore, you must configure a message storage instance for message storage and message data persistence.
--   Currently, each Message Queue for MQTT instance \(gateway instance\) must be bound to a storage instance \(RocketMQ instance\). Non-persistent usage \(in direct push mode, where messages are not persistent\) will be available in the future.
--   Currently, Message Queue for MQTT only supports RocketMQ instances for backend message storage. Message Queue for MQTT will support other types of storage instances in the future, such as Kafka and AMQP \(RabbitMQ\).
--   Currently, you can create a limited number of Message Queue for MQTT instances in a region, and one Message Queue for MQTT instance can be bound to only one RocketMQ instance. For the maximum number of instances that can be created in one region, see the console prompts.
+-   Currently, each Message Queue for MQTT instance \(gateway instance\) must be bound to a storage instance \(MQ instance\). Non-persistent usage \(in direct push mode, where messages are not persistent\) will be available in the future.
+-   Currently, Message Queue for MQTT only supports MQ instances for backend message storage. Message Queue for MQTT will support other types of storage instances in the future, such as Kafka and AMQP \(RabbitMQ\).
+-   Currently, you can create a limited number of Message Queue for MQTT instances in a region, and one Message Queue for MQTT instance can be bound to only one MQ instance. For the maximum number of instances that can be created in one region, see the console prompts.
 
 When using Message Queue for MQTT, note the following network access restrictions:
 
@@ -37,7 +37,7 @@ As shown in [Figure 1](#fig_dsf_ny4_hhb), you must create resources before sendi
 The resources include:
 
 -   Message Queue for MQTT Instance \(for maintaining client connections and forwarding messages\)
--   Message storage instance \(for message storage, and only RocketMQ instances are currently supported\)
+-   Message storage instance \(for message storage, and only MQ instances are currently supported\)
 -   Topic \(level-1 topic for message sending and subscription, that is, the parent topic\)
 -   Group ID \(for client identification\)
 
@@ -75,7 +75,7 @@ The resources include:
 
 3.  **Create and bind a data storage instance**.
 
-    After creating an Message Queue for MQTT instance, you must create an instance for storing topics and messages and bind the message storage instance to the Message Queue for MQTT instance. \(Currently, only RocketMQ instances are supported for data storage.\)
+    After creating an Message Queue for MQTT instance, you must create an instance for storing topics and messages and bind the message storage instance to the Message Queue for MQTT instance. \(Currently, only MQ instances are supported for data storage.\)
 
     The binding has the following limits:
 
@@ -90,34 +90,34 @@ The resources include:
     Follow these steps to create and bind a storage instance:
 
     1.  In the left-side navigation pane, click **Instances**. On the **Instances** tab page that appears by default, select the created Message Queue for MQTT instance.
-    2.  In the **Step 2: Configure Message Storage** section, click the **RocketMQ \>\>** box.
+    2.  In the **Step 2: Configure Message Storage** section, click the **MQ \>\>** box.
 
         ![Bind an instance](images/47584_en-US.png "Bind an instance")
 
     3.  In the **Configure Message Storage** dialog box, set the parameters based on the instance and your requirements.
-        -   If you have purchased a RocketMQ instance, select **Select Existing Instance**. A list of message storage instances that you have created \(purchased\) is displayed. Click an existing RocketMQ instance and then **OK** to complete the binding.
+        -   If you have purchased a MQ instance, select **Select Existing Instance**. A list of message storage instances that you have created \(purchased\) is displayed. Click an existing MQ instance and then **OK** to complete the binding.
 
             ![Select an existing instance](images/47580_en-US.png "Select an existing instance")
 
-        -   If you have not purchased a RocketMQ instance, do as follows:
+        -   If you have not purchased a MQ instance, do as follows:
 
-            -   Click **Create Shared Instance** to create a RocketMQ Standard Edition instance. Enter an instance name and description. Then, click **OK**.
+            -   Click **Create Shared Instance** to create a MQ Standard Edition instance. Enter an instance name and description. Then, click **OK**.
 
                 ![Create a shared instance](images/47581_en-US.png "Create a shared instance")
 
-            -   Click **Purchase Platinum Instance** to create a RocketMQ Platinum Edition instance. Click **Buy RocketMQ Platinum** and follow the prompts on the page to complete the purchase \(creation\).
+            -   Click **Purchase Platinum Instance** to create a MQ Platinum Edition instance. Click **Buy MQ Platinum** and follow the prompts on the page to complete the purchase \(creation\).
 
                 ![Create a Platinum Edition instance](images/47582_en-US.png "Create a Platinum Edition instance")
 
-            After an instance is created, repeat [Step i](#li_6va_ldc_986) and [Step ii](#li_6yp_yg4_jom), select **Select Existing Instance**, click the created RocketMQ instance, and click **OK** to complete the binding.
+            After an instance is created, repeat [Step i](#li_6va_ldc_986) and [Step ii](#li_6yp_yg4_jom), select **Select Existing Instance**, click the created MQ instance, and click **OK** to complete the binding.
 
 4.  **Create a Topic**.
 
     To send and receive messages over MQTT, you must create an MQTT parent topic. Subtopics at different levels can be directly used in code without the need to create them.
 
-    A one-to-one binding relationship is established between the Message Queue for MQTT instance and the storage instance. Therefore, the topic is actually created on the storage instance and mapped to the Message Queue for MQTT console. You can also perform all topic operations in the RocketMQ console.
+    A one-to-one binding relationship is established between the Message Queue for MQTT instance and the storage instance. Therefore, the topic is actually created on the storage instance and mapped to the Message Queue for MQTT console. You can also perform all topic operations in the MQ console.
 
-    If you have already created a topic on the RocketMQ instance, you can use this topic directly. If you have not created any topics, perform the following steps:
+    If you have already created a topic on the MQ instance, you can use this topic directly. If you have not created any topics, perform the following steps:
 
     1.  In the left-side navigation pane, click **Message Storage**.
 
@@ -154,9 +154,9 @@ The resources include:
 
 To use an SDK to send and receive messages, you must use an endpoint to access the Message Queue for MQTT instance. An Message Queue for MQTT instance endpoint consists of the instance domain and port.
 
-After the Message Queue for MQTT instance and the RocketMQ instance are bound, the endpoint information is immediately displayed in the **Endpoint Information** area.
+After the Message Queue for MQTT instance and the MQ instance are bound, the endpoint information is immediately displayed in the **Endpoint Information** area.
 
-You can also obtain the endpoint information by performing the following steps after binding the Message Queue for MQTT instance and the RocketMQ instance:
+You can also obtain the endpoint information by performing the following steps after binding the Message Queue for MQTT instance and the MQ instance:
 
 1.  In the top navigation bar of the console, select the region where the created resource is located, and then choose **Instances** in the left-side navigation pane.
 
@@ -167,7 +167,7 @@ You can also obtain the endpoint information by performing the following steps a
 ![Obtain the endpoint](images/43316_en-US.png "Obtain the endpoint")
 
 
-**Public Endpoint** and **Intranet Endpoint** are available. We recommend that you use public endpoints for clients in IoT and mobile Internet scenarios. Intranet endpoints are for use only in some special scenarios. In general, we recommend that you use the server-side MQ products in cloud server scenarios, such as RocketMQ.
+**Public Endpoint** and **Intranet Endpoint** are available. We recommend that you use public endpoints for clients in IoT and mobile Internet scenarios. Intranet endpoints are for use only in some special scenarios. In general, we recommend that you use the server-side MQ products in cloud server scenarios, such as MQ.
 
 **Note:** To connect to the service with an endpoint on a client, use the domain name rather than the IP address because the IP address can change at any time. Alibaba Cloud is not responsible for any service interruptions caused by the direct use of IP addresses.
 
