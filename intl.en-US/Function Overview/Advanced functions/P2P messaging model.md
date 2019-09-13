@@ -28,7 +28,7 @@ String p2pTopic =topic+"/p2p/GID_xxxx@@@DEVICEID_001";
 sampleClient.publish(p2pTopic,message);
 ```
 
-When using the RocketMQ SDK to send P2P messages, you only need to set the subtopic attribute to the preceding subtopic string because the parent topic and subtopic are set separately.
+When using the MQ SDK to send P2P messages, you only need to set the subtopic attribute to the preceding subtopic string because the parent topic and subtopic are set separately.
 
 **Java example**
 

@@ -21,32 +21,32 @@ P2P 模式不仅可以为接收者节省注册订阅关系的成本，此外，�
 
 使用 MQTT SDK 发送 P2P 消息时，需将二级 Topic 设为 “p2p”，将三级 Topic 设为目标接收者的 Client ID。
 
- **Java 示例** 
+**Java 示例**
 
 ``` {#codeblock_5q3_eac_luv .language-java}
 String p2pTopic =topic+"/p2p/GID_xxxx@@@DEVICEID_001";
 sampleClient.publish(p2pTopic,message);
 ```
 
-使用消息队列 RocketMQ 的 SDK 发送 P2P 消息时，由于一级 Topic 和子级 Topic 是分开设置的，因此只需要将子级 Topic 属性设置成上述的子级 Topic 字符串。
+使用消息队列 MQ 的 SDK 发送 P2P 消息时，由于一级 Topic 和子级 Topic 是分开设置的，因此只需要将子级 Topic 属性设置成上述的子级 Topic 字符串。
 
- **Java 示例** 
+**Java 示例**
 
 ``` {#codeblock_6dx_i0v_irv .language-java}
 String subTopic="/p2p/GID_xxxx@@@DEVICEID_001";
 msg.putUserProperties(PropertyKeyConst.MqttSecondTopic, subTopic);
 ```
 
- [表 1](#table_f4u_8ag_p50) 提供了发送 P2P 消息的多语言代码示例的链接。
+[表 1](#table_f4u_8ag_p50) 提供了发送 P2P 消息的多语言代码示例的链接。
 
 |语言|链接|
 |--|--|
-|.NET| [.NET 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-DoNet-demo/MQTTSendP2PMessage.cs) |
-|C| [C 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-c-demo/src/c/mqttSendP2PMessageDemo.c) |
-|Java| [Java 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-java-demo/src/main/java/com/aliyun/openservices/lmq/example/demo/MQTTSendP2PMessage.java) |
-|JavaScript| [JavaScript 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-js-demo/mqttSendP2PMessage.html) |
-|Python| [Python 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-python-demo/MQTTSendP2PMessage.py) |
-|PHP| [PHP 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTSendP2PMessageToMQTT.php) |
+|.NET|[.NET 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-DoNet-demo/MQTTSendP2PMessage.cs)|
+|C|[C 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-c-demo/src/c/mqttSendP2PMessageDemo.c)|
+|Java|[Java 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-java-demo/src/main/java/com/aliyun/openservices/lmq/example/demo/MQTTSendP2PMessage.java)|
+|JavaScript|[JavaScript 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-js-demo/mqttSendP2PMessage.html)|
+|Python|[Python 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-python-demo/MQTTSendP2PMessage.py)|
+|PHP|[PHP 示例代码](https://github.com/AliwareMQ/lmq-demo/blob/master/lmq-php-demo/MQTTSendP2PMessageToMQTT.php)|
 
 ## 接收 P2P 消息 {#section_8qj_7me_syj .section}
 
