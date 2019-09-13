@@ -4,7 +4,7 @@ If the MQ for MQTT API is called successfully, ResponseCode=200 is returned to t
 
 |Error code|Symptom and cause|Solution|
 |----------|-----------------|--------|
-|ONS\_SYSTEM\_ERROR|The backend of RocketMQ is abnormal.|Contact Alibaba Cloud Customer Services by submitting a ticket.|
+|ONS\_SYSTEM\_ERROR|The backend of MQ is abnormal.|Contact Alibaba Cloud Customer Services by submitting a ticket.|
 |ONS\_SERVICE\_UNSUPPORTED|The call is not currently supported in the corresponding region.|Contact Alibaba Cloud Customer Services to check whether the operation is available.|
 |ONS\_INVOKE\_ERROR|API call failed.|Contact Alibaba Cloud Customer Services.|
 |BIZ\_FIELD\_CHECK\_INVALID|Parameter verification failed.|Check whether the parameters are valid based on the API reference.|
