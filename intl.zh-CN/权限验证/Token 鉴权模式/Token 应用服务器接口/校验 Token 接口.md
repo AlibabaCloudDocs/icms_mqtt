@@ -8,6 +8,10 @@ https://\{tokenServerUrl\}/token/query
 
 校验 Token 的接口应该由应用服务器发起，应用服务器可以使用本接口确认单个 Token 是否有效。
 
+## 使用限制 {#section_l69_u0k_ypi .section}
+
+单用户请求频率限制为 1000 次/秒。如有特殊需求，请[提交工单](https://workorder.console.aliyun.com/console.htm?lang=#/ticket/list/)申请。
+
 ## 请求参数 {#section_rvn_pm4_hhb .section}
 
 |名称|类型|说明|
